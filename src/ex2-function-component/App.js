@@ -1,12 +1,16 @@
 import React from 'react'
-import Header from './Header'
+import Header, {Navbar} from './Header'
 import Footer from './Footer'
+import Table from './Table'
 
 function App() {
   return (
     <>
     <Header />
-    <div>App Content!</div>
+    <Navbar />
+    <div>
+      <Table />
+    </div>
     <Footer />
     </>
   )

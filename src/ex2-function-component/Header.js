@@ -3,14 +3,18 @@ import React from "react";
 function Header() {
   return (
     <div>
-      <Navbar />
+      <header className="container-fluid bg-success text-white px-5"> 
+        <div className ="contaier">
+          <h2>Header Content</h2>
+        </div>
+      </header>
     </div>
   );
 }
 
 export default Header;
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
       <div className="container-fluid">
