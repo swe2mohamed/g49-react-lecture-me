@@ -6,6 +6,7 @@ import Counter from "./ex5-state/Counter";
 import ToggleButton from "./ex5-state/ToggleButton";
 import HooksDemo from "./ex7-hooks/HooksDemo";
 import TodoList from "./ex7-hooks/TodoList";
+import ValidationForm from "./ex7-hooks/ValidationForm";
 //import App from "./ex2-function-component/App";
 //import NameLt from "./ex4-props/NameLt";
 
@@ -18,4 +19,5 @@ const list = ["Negar Bah", "Merhrdad Jav", "Simon Fo"];
 //root.render(<Counter />)
 //root.render(<ToggleButton />)
 //root.render(<HooksDemo />);
-root.render(<TodoList />)
+//root.render(<TodoList />)
+root.render(<ValidationForm />)
