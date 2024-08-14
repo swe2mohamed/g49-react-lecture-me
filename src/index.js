@@ -8,6 +8,7 @@ import HooksDemo from "./ex7-hooks/HooksDemo";
 import TodoList from "./ex7-hooks/TodoList";
 import ValidationForm from "./ex7-hooks/ValidationForm";
 import HookFormDemo from "./ex7-hooks/HookFormDemo";
+import AxiosDemo from "./ex8-axios-router/AxiosDemo";
 //import App from "./ex2-function-component/App";
 //import NameLt from "./ex4-props/NameLt";
 
@@ -22,4 +23,5 @@ const list = ["Negar Bah", "Merhrdad Jav", "Simon Fo"];
 //root.render(<HooksDemo />);
 //root.render(<TodoList />)
 //root.render(<ValidationForm />)
-root.render(<HookFormDemo />)
+//root.render(<HookFormDemo />)
+root.render(<AxiosDemo />)
