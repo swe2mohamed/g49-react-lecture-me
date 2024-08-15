@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const AxiosDemo = () => {
@@ -27,11 +27,15 @@ const AxiosDemo = () => {
       .post(baseUrl + "/api/v1/booking/book", { id: id, email: email })
       .then((response) => {
         console.log("Response: ", response);
+        if (response.status === 201) {
+          console.log("Booking successful.");
+          getBookingClickHandler();
+        }
       })
       .catch((error) => {
         console.log("Error: ", error);
-        if(error.response.status ===400){
-          console.log(error.response.data)
+        if (error.response.status === 400) {
+          console.log(error.response.data);
         }
       });
   };
@@ -63,9 +67,11 @@ const AxiosDemo = () => {
                 <div className="d-grid card-footer">
                   <button
                     type="button"
-                    className={`btn btn-${booking.booked ? "danger" : "success"}`}
+                    className={`btn btn-${
+                      booking.booked ? "danger" : "success"
+                    }`}
                     onClick={() =>
-                      bookBookingClickHandler(booking.id, "test4@gmail.com")
+                      bookBookingClickHandler(booking.id, "test22@gmail.com")
                     }
                     disabled={booking.booked}
                   >
